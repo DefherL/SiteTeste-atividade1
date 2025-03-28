@@ -1,7 +1,32 @@
-/* Estilos Globais */
-body {
+/* Estilos da Logo */
+.logo-nav {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-main {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-line {
   font-family: 'Poppins', sans-serif;
-  padding-top: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.logo-line:first-child {
+  margin-bottom: 2px;
 }
 
 /* Hero Section */
@@ -13,79 +38,26 @@ body {
   min-height: 80vh;
   display: flex;
   align-items: center;
-}
-
-/* Logo Styles */
-.logo-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.1;
-  display: inline-block;
-  text-transform: uppercase;
-  color: white;
-}
-
-.logo-main {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-}
-
-.logo-line1 {
-  font-size: 3.5rem;
-  display: block;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.logo-line2 {
-  font-size: 4.5rem;
-  display: block;
-  color: #ffcc00;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  margin-top: -0.5rem;
-}
-
-.logo-footer {
-  font-weight: 700;
-  color: #ffcc00;
-}
-
-/* Cards */
-.card {
-  transition: all 0.3s ease;
-  border: none;
-  border-radius: 10px;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Formulário */
-#contactForm {
-  background-color: #f8f9fa;
+  padding-top: 80px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .hero-section {
-    min-height: 60vh;
+  .logo-nav {
+    width: 40px;
+    height: 40px;
   }
 
-  .logo-line1 {
+  .logo-main {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-line {
+    font-size: 0.8rem;
+  }
+
+  .hero-section h1 {
     font-size: 2.5rem;
-  }
-
-  .logo-line2 {
-    font-size: 3rem;
-    margin-top: -0.3rem;
-  }
-
-  .navbar-brand .logo-text {
-    font-size: 1rem;
   }
 }
