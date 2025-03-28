@@ -1,4 +1,91 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Estilos Globais */
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 56px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://source.unsplash.com/random/1600x900?delivery');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Styles */
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+}
+
+.logo-main {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.logo-line1 {
+  font-size: 3.5rem;
+  display: block;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.logo-line2 {
+  font-size: 4.5rem;
+  display: block;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-top: -0.5rem;
+}
+
+.logo-footer {
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+/* Cards */
+.card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulário */
+#contactForm {
+  background-color: #f8f9fa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+
+  .logo-line1 {
+    font-size: 2.5rem;
+  }
+
+  .logo-line2 {
+    font-size: 3rem;
+    margin-top: -0.3rem;
+  }
+
+  .navbar-brand .logo-text {
+    font-size: 1rem;
+  }
 }
